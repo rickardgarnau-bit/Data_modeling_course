@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  app-exercise-0:
+    container_name: ex0-compose-container
+    build: .
+    volumes:
+      - ./src:/app/src
+    command: python src/os_data.py
